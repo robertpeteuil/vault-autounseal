@@ -11,7 +11,8 @@ import kubernetes
 import requests
 from kubernetes import client, config
 from loguru import logger
-from requests.packages.urllib3.exceptions import InsecureRequestWarning
+# from requests.packages.urllib3.exceptions import InsecureRequestWarning
+from urllib3.exceptions import InsecureRequestWarning
 
 secret_shares = ""  # nosec
 secret_threshold = ""  # nosec
